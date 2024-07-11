@@ -1,0 +1,24 @@
+.empleados-formacion-view {
+  display: block;
+  height: 100%;
+}
+.empleados-formacion-view vaadin-grid-pro {
+  height: 100%;
+}
+.empleados-formacion-view vaadin-grid-filter,
+.empleados-formacion-view vaadin-grid-filter > * {
+  width: 100%;
+}
+.empleados-formacion-view vaadin-grid-pro vaadin-horizontal-layout {
+  align-items: center;
+}
+.empleados-formacion-view vaadin-grid-pro img {
+  border-radius: 50%;
+  flex-shrink: 0;
+  height: var(--lumo-size-m);
+  width: var(--lumo-size-m);
+}
+.empleados-formacion-view .name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

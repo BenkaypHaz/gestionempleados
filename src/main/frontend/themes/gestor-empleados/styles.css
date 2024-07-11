@@ -1,0 +1,13 @@
+@import url('./main-layout.css');
+@import url('./views/informacion-general-view.css');
+@import url('./views/empleadospor-area-view.css');
+@import url('./views/empleados-formacion-view.css');
+@import url('@fontsource/nunito-sans/index.css');    html {
+--lumo-font-family: Nunito Sans;
+
+    }
+
+    [theme~="dark"] {
+      --lumo-base-color: hsl(243, 56%, 7%);
+
+    }
