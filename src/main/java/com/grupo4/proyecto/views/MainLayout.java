@@ -1,7 +1,7 @@
 package com.grupo4.proyecto.views;
 
-import com.grupo4.proyecto.views.empleadosformacion.EmpleadosFormacionView;
-import com.grupo4.proyecto.views.empleadosporarea.EmpleadosporAreaView;
+import com.grupo4.proyecto.views.empleadosporarea.EmpleadosAreaView;
+import com.grupo4.proyecto.views.formacion.FormacionView;
 import com.grupo4.proyecto.views.informaciongeneral.InformacionGeneralView;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
@@ -52,13 +52,13 @@ public class MainLayout extends AppLayout {
     private SideNav createNavigation() {
         SideNav nav = new SideNav();
 
-        nav.addItem(new SideNavItem("Informacion General", InformacionGeneralView.class,
+        nav.addItem(new SideNavItem("Informacion General Empleados", InformacionGeneralView.class,
                 LineAwesomeIcon.BINOCULARS_SOLID.create()));
-        nav.addItem(new SideNavItem("Empleados por Area", EmpleadosporAreaView.class,
+        nav.addItem(new SideNavItem("Formacion", FormacionView.class,
                 LineAwesomeIcon.SEARCH_SOLID.create()));
-        nav.addItem(new SideNavItem("Empleados Formacion", EmpleadosFormacionView.class,
+        nav.addItem(new SideNavItem("Empleados Formacion", EmpleadosAreaView.class,
                 LineAwesomeIcon.BOOK_SOLID.create()));
-
+   
         return nav;
     }
 
